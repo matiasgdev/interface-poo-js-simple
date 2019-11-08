@@ -1,0 +1,52 @@
+<!DOCTYPE html >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title> Js POO </title>
+    <!-- Bootstrap-->
+    <link link="link" rel="stylesheet" href="bootstrap.min.css"/>
+  </head>
+  <body>
+    <!--Navigation-->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand ml-5" href="/"> @matiasgdev </a>
+    </nav>
+    <div class="container">
+      <!--APP-->
+      <div class="row pt-5" id="App">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h4>Agrega un producto</h4>
+            </div>
+            <form class="card-body" action="" id="product-form">
+              <div class="form-group">
+                <input class="form-control" type="text" name="name" placeholder="Nombre del producto" autocomplete="off" id="name"/>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="number" name="precio" placeholder="Precio del producto" step="0.01" id="price"/>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="number" name="año" placeholder="Año del producto" min="1900" max="2020" value="2018" id="year"/>
+              </div>
+              <div class="form-group">
+                <h6 class="text-center">Agrega una imagen</h6>
+                <input type="file" name="file" id="img"/>
+              </div>
+              <input class="btn btn-primary btn-block" type="submit" value="Guardar" n="n"/>
+            </form>
+          </div>
+        </div>
+        <!-- list of products -->
+        <div class="col-md-8" id="product-list"></div>
+        <!-- ### -->
+      </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script script="script" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+
+  </body>
+</html>
